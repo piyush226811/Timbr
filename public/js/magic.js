@@ -2,10 +2,7 @@
 	var socket = io.connect(window.location.hostname);
 
 	socket.on('nudgeleft', function(data) {
-		console.log('Received nudge left');
-		console.log(data);
-
-		$.deck('next');
+		window.location.replace("http://timbr.herokuapp.com/success.html");
 	});
 
 	socket.on('nudgeright', function(data) {
